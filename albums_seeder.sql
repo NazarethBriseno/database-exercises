@@ -17,5 +17,6 @@ INSERT INTO albums (artist, album_name, release_date, sales, genre) VALUES ("Mic
     ("Celine Dion","Falling into You",1996,21.1,"Pop, Soft Rock"),
     ("Adele","21",2011,27.1,"Pop, Soul"),
     ("The Beatles","1",2000,23.2,"Rock"),
-    ("Metallica","Metallica",1991,22.7,"Heavy Metal");
-
+    ("Metallica","Metallica",1991,22.7,"Heavy Metal"),
+    ("Pink Floyd", "The Wall", 1979, 18.9, "Progressive Rock"),
+    ("The Beatles", "Sgt. Pepper's Lonely Hearts Club Band", 1967, 18.3, "Rock");
