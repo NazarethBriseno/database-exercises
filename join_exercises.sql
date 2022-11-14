@@ -24,5 +24,15 @@ SELECT title, COUNT(title) FROM titles t
 WHERE de.dept_no LIKE '%9' AND t.to_date LIKE '9%' AND de.to_date LIKE '9%'
 GROUP BY title ORDER BY COUNT(title) DESC;
 
+SELECT d.dept_name AS 'Department Name',
+       CONCAT(e.first_name, ' ', e.last_name) AS 'Department Manager',
+       s.salary
+FROM salaries s JOIN employees e on e.emp_no = s.emp_no
+        JOIN dept_manager dm on e.emp_no = dm.emp_no
+        JOIN departments d on dm.dept_no = d.dept_no
+WHERE dm.to_date LIKE '9%'
+    AND s.to_date LIKE '9%'
+ORDER BY d.dept_name;
+
 
 
